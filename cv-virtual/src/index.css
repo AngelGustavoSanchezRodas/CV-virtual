@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+    /* Definimos tus colores de referencia aquí */
+    --color-dark-bg: #0d1117;
+    --color-dark-card: #161b22;
+    --color-dark-border: #30363d;
+    --color-code-blue: #79c0ff;
+    --color-code-purple: #d2a8ff;
+}
+
+/* Aplicamos el fondo al body usando el nuevo color */
+@layer base {
+    body {
+        @apply bg-dark-bg text-white antialiased;
+        margin: 0;
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+}
